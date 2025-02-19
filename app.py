@@ -32,7 +32,7 @@ app.add_middleware(
 )
 DATA_DIR = "data"
 api_key= os.getenv("AIPROXY_TOKEN")
-host = os.getenv("host") 
+host = " https://aiproxy.sanand.workers.dev/openai/v1/chat/completions"
 
 task_mapping = {
     "A1": install_and_run_datagen,

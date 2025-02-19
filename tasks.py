@@ -16,7 +16,7 @@ import os
 import json
 import requests
 
-host=os.getenv("host")
+host=" https://aiproxy.sanand.workers.dev/openai/v1/chat/completions"
 api_key=os.getenv("AIPROXY_TOKEN")
 
 
