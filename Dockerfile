@@ -2,7 +2,9 @@
 FROM python:3.12.8
 
 # Install required dependencies for building PyAudio
-RUN apt-get update && apt-get install -y python3-distutils
+RUN apt-get update && apt-get install -y \
+    python3-distutils \
+    && rm -rf /var/lib/apt/lists/*
 # Create Work directory
 WORKDIR /app
 
