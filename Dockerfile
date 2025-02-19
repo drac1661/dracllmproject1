@@ -2,11 +2,7 @@
 FROM python:3.12.8
 
 # Install required dependencies for building PyAudio
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    portaudio19-dev \
-    python3-dev \
-    libsndfile1-dev
+RUN apt-get update && apt-get install -y python3-distutils
 # Create Work directory
 WORKDIR /app
 
